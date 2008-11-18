@@ -1,0 +1,74 @@
+---
+extension: css
+filter:    sass
+layout:    nil   # no layout
+sass_options:
+  :style: :expanded
+---
+!text        = #000
+!border      = #CCC
+!header      = #111
+!link        = #125AA7
+!link_hover  = #000
+!blockquote  = #666
+!code        = #000
+!box_bg      = #EEE
+!highlight   = #B2CCFF
+!quiet       = #666
+!alt         = #666
+!viewport_background_color = #DCD8D8
+
+@import malo.css
+
+body
+  :background-color = !viewport_background_color
+  :line-height 1.4
+  :font
+    :size 13px
+    :family Verdana
+
+#content
+  :background-color white
+  :padding 20px
+  :border-top 3px solid lightgray
+  :border-right 3px solid lightgray
+
+#wrapper
+  :width 760px
+  :margin 0 auto
+
+#header
+  :padding 0 0 5px 20px
+  a
+    :color gray
+    :font
+      :size 24px
+      :weight bold
+      :family "Times New Roman"
+    :text-decoration none
+
+.no_mar_top
+  :margin-top 0
+
+.no_mar_bot
+  :margin-bottom 0
+
+.no_mar
+  :margin 0
+
+.title_link
+  a
+    :text-decoration none
+    &:visited
+      :color black
+#content
+  a
+    &:hover
+      :background-color yellow
+
+.meta
+  :color gray
+
+
+
+    

@@ -1,0 +1,27 @@
+--- 
+created_at: 2008-08-07 13:01:14.047977 +01:00
+filter:
+  - haml
+---
+- article = @pages.find(:first, :in_directory => @page.dir, :recursive => true, :sort_by => "created_at", :reverse => true, :blog_post => true)
+
+.article
+  %h1.no_mar.title_link
+    = link_to_page(article)
+  %hr
+  .body
+    = render(article)
+
+.recent_posts
+  %h2.no_mar_bot
+    Legfrisebb cikkek
+  %hr
+  - articles = @pages.find(:all, :in_directory => @page.dir, :recursive => true, :sort_by => "created_at", :reverse => true, :blog_post => true)
+  - articles.shift
+  - for article in articles
+    .article
+      .meta.dp25
+        = article.created_at.strftime('%Y.%m.%d, %H:%M')
+      %h3.title_link.dp75.no_mar
+        = link_to_page(article)
+      .clear

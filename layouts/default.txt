@@ -9,8 +9,20 @@ filter: erb
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <title><%= @page.title %></title>
   <meta name="author" content="<%= @page.author %>" />
+  <link rel="stylesheet" href="/css/site.css" type="text/css" media="screen, projection" />
 </head>
 <body>
-  <%= @content %>
+  <div id='wrapper' class='container'>
+    <div id='header'>
+      <a href='/'>hiperkocka.hu</a>
+    </div>
+    <div id='content'>
+      <% if @page.title %>
+        <h1 class='no_mar'><%= @page.title %></h1>
+        <hr></hr>
+      <% end %>
+      <%= @content %>
+    </div>
+  </div>
 </body>
 

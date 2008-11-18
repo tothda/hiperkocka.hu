@@ -1,0 +1,39 @@
+/*
+	Malo - CSS Library
+	Author:Vladimir Carrer
+*/
+
+/* CSS Reset */
+
+html, body, div, p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  }
+  
+/* CSS Grid */
+
+/*
+For center layout 
+Define your default width in %, px or em
+
+.main {  margin:0 auto; width:85%;}
+
+*/
+
+.dp20,
+.dp25,
+.dp33,
+.dp50,
+.dp75,
+.dp100{float:left; display: inline; *margin-left:-0.04em; } /* IE margin hack */
+
+/* dp = div percet */
+
+.dp20{width:20%;}
+.dp25{width:25%;}
+.dp33{width:33.33%;}
+.dp50{width:50%;}
+.dp75{width:75%;}
+.dp100{width:100%;}
+.clear{ clear:both;}
