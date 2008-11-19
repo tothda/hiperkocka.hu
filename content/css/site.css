@@ -33,6 +33,8 @@ h1
 h2
   :font-size 1.4em
 
+p
+  :margin-bottom 10px
 
 #content
   :background-color white

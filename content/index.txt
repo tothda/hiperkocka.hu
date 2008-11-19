@@ -1,5 +1,6 @@
 --- 
 created_at: 2008-08-07 13:01:14.047977 +01:00
+dirty: true
 filter:
   - haml
 ---
@@ -15,7 +16,7 @@ filter:
 
 .recent_posts.mar_top
   %h2.mar_hlf_bot.bor_bot
-    Legfrisebb cikkek
+    Korábbi cikkek
   - articles = @pages.find(:all, :in_directory => @page.dir, :recursive => true, :sort_by => "created_at", :reverse => true, :blog_post => true)
   - articles.shift
   - for article in articles

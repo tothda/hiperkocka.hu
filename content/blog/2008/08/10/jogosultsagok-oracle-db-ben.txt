@@ -3,7 +3,7 @@ title:      Jogosultságok Oracle DB-ben
 created_at: 2008-08-10 12:15:14.047977 +01:00
 blog_post:  true
 filter:
-  - markdown
+  - textile
 ---
 
 A minap szembesültem egy jogosultági problémával Oracle-ben, s mivel régen volt már az OCP vizsga, és én gyorsan felejtek, kénytelen voltam felfrissíteni ismereteimet a témában. Ha már így jártam, s mivel ketten is Oracle-ös posztokra nyilvánították ki igényüket a nyitóbejegyzés kommentjeiben, gondoltam írok a témáról.
