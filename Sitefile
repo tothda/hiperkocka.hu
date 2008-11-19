@@ -4,4 +4,9 @@ task :default => :build
 desc 'deploy the site to the webserver'
 task :deploy => [:build, 'deploy:rsync']
 
+SITE.user = 'tothda'
+SITE.host = 'pappkrisztina.hu'
+SITE.remote_dir = '/var/www/hiperkocka.hu/'
+SITE.create_mode = 'directory'
+
 # EOF

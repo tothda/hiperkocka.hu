@@ -10,16 +10,23 @@ filter: erb
   <title><%= @page.title %></title>
   <meta name="author" content="<%= @page.author %>" />
   <link rel="stylesheet" href="/css/site.css" type="text/css" media="screen, projection" />
+  <link rel="alternate" type="application/atom+xml" title="hiperkocka feed (atom)" href="/blog/atom.xml" />
 </head>
 <body>
   <div id='wrapper' class='container'>
     <div id='header'>
-      <a href='/'>hiperkocka.hu</a>
+      <div class='title'>
+        <a href='/'>hiperkocka.hu</a>
+      </div>
+      <div class='links'>
+        <a href='/blog/atom.xml'>rss</a>
+      </div>
+      <div class='clear'></div>
     </div>
     <div id='content'>
       <% if @page.title %>
-        <h1 class='no_mar'><%= @page.title %></h1>
-        <hr></hr>
+        <h1 class='no_mar bor_bot'><%= @page.title %></h1>
+        <div class='meta mar_hlf_bot'><%= @page.created_at.strftime('%Y.%m.%d, %H:%M') %></div>
       <% end %>
       <%= @content %>
     </div>

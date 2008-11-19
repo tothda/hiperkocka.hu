@@ -73,110 +73,16 @@ A következő nézetekből tudjuk lekérdezni, hogy kinek milyen jogosultságai 
 
 A végére pedig jöjjön három trükkös lekérdezés ([forrás](http://www.adp-gmbh.ch/ora/misc/recursively_list_privilege.html)). Az első megadja, hogy egy user-nek, milyen szerepei vannak (rekurzívan) és a szerepeken keresztül milyen rendszerszintű privilégiumokkal rendelkezik.
 
-    select
-      lpad(' ', 2*level) || granted_role "User, his roles and privileges"
-    from
-      (
-      /* THE USERS */
-        select 
-          null     grantee, 
-          username granted_role
-        from 
-          dba_users
-        where
-          username like upper('%&enter_username%')
-      /* THE ROLES TO ROLES RELATIONS */ 
-      union
-        select 
-          grantee,
-          granted_role
-        from
-          dba_role_privs
-      /* THE ROLES TO PRIVILEGE RELATIONS */ 
-      union
-        select
-          grantee,
-          privilege
-        from
-          dba_sys_privs
-      )
-    start with grantee is null
-    connect by grantee = prior granted_role;
+
+<script src="http://gist.github.com/26456.js"></script>
+
 
 Megkeresi egy adott rendszer szintű privilégiumhoz, hogy milyen szerepek rendelkeznek vele (rekurzívan) és ezek a szerepek milyen felhasználókhoz tartoznak.
 
-    select
-      lpad(' ', 2*level) || c "Privilege, Roles and Users"
-    from
-      (
-      /* THE PRIVILEGES */
-        select 
-          null   p, 
-          name   c
-        from 
-          system_privilege_map
-        where
-          name like upper('%&enter_privliege%')
-      /* THE ROLES TO ROLES RELATIONS */ 
-      union
-        select 
-          granted_role  p,
-          grantee       c
-        from
-          dba_role_privs
-      /* THE ROLES TO PRIVILEGE RELATIONS */ 
-      union
-        select
-          privilege     p,
-          grantee       c
-        from
-          dba_sys_privs
-      )
-    start with p is null
-    connect by p = prior c;
+<script src="http://gist.github.com/26458.js"></script>
 
 Megkeresi, hogy adott séma adott objektumára milyen objektumszintű privilégiumok vannak kiosztva közvetlenül vagy szerepeken keresztül (rekurzívan).
 
-    select
-      case when level = 1 then own || '.' || obj || ' (' || typ || ')' else
-      lpad (' ', 2*(level-1)) || obj || nvl2 (typ, ' (' || typ || ')', null)
-      end
-    from
-      (
-      /* THE OBJECTS */
-        select 
-          null          p1, 
-          null          p2,
-          object_name   obj,
-          owner         own,
-          object_type   typ
-        from 
-          dba_objects
-        where
-           owner like upper('%&enter_owner_name%')    
-           and object_name like upper('%&enter_object_name%')
-           
-      /* THE OBJECT TO PRIVILEGE RELATIONS */ 
-      union
-        select
-          table_name p1,
-          owner      p2,
-          grantee,
-          grantee,
-          privilege
-        from
-          dba_tab_privs
-      /* THE ROLES TO ROLES/USERS RELATIONS */ 
-      union
-        select 
-          granted_role  p1,
-          granted_role  p2,
-          grantee,
-          grantee,
-          null
-        from
-          dba_role_privs
-      )
-    start with p1 is null and p2 is null
-    connect by p1 = prior obj and p2 = prior own;
+<script src="http://gist.github.com/26459.js"></script>
+
 
