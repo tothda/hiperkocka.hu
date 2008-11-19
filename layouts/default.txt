@@ -27,9 +27,26 @@ filter: erb
       <% if @page.title %>
         <h1 class='no_mar bor_bot'><%= @page.title %></h1>
         <div class='meta mar_hlf_bot'><%= @page.created_at.strftime('%Y.%m.%d, %H:%M') %></div>
+        <div class='meta mar_hlf_bot'><%= link_to('komment', @page, :anchor => 'disqus_thread') %></div>
       <% end %>
       <%= @content %>
     </div>
   </div>
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+  var links = document.getElementsByTagName('a');
+  var query = '?';
+  for(var i = 0; i < links.length; i++) {
+    if(links[i].href.indexOf('#disqus_thread') >= 0) {
+      query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    }
+  }
+  document.write('<script type="text/javascript" src="http://disqus.com/forums/hiperkocka/get_num_replies.js' + query + '"></' + 'script>');
+})();
+//]]>
+</script>
+
 </body>
 
