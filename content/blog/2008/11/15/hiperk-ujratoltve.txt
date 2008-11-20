@@ -22,4 +22,4 @@ Az [októberi Budapest.rb](http://ruby.meetup.hu/blog/2008/10/23/budapest-rb-okt
 * használhatok template nyelveket tetszés szerint ([sass](http://haml.hamptoncatlin.com/docs/rdoc/classes/Sass.html)-t a stylesheet-ekhez, [haml](http://haml.hamptoncatlin.com/tutorial/)-t, [textile](http://hobix.com/textile/)-t, [erb](http://www.ruby-doc.org/stdlib/libdoc/erb/rdoc/)-t a html-ekhez)
 * mert ruby, és szeretem :)
 
-A külcsín egyszerű lett, a tartalomra kellene innentől fogva koncentrálni. 
+A külcsín egyszerű lett, még faragom, de  a tartalomra kellene innentől fogva koncentrálni. 

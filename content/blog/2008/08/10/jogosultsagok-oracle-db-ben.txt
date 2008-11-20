@@ -1,6 +1,6 @@
 --- 
 title:      Jogosultságok Oracle DB-ben
-created_at: 2008-08-10 12:15:14.047977 +01:00
+created_at: 2008-08-10 12:24:10.047977 +02:00
 blog_post:  true
 filter:
   - textile
