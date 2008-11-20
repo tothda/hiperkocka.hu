@@ -1,0 +1,12 @@
+---
+extension: html
+filter:    haml
+---
+.article
+  %h1.no_mar.title_link.bor_bot
+    = link_to_page(article)
+  .meta.mar_hlf_bot
+    = article.created_at.strftime('%Y.%m.%d, %H:%M,')
+    = link_to('hozzászólások', article, :anchor => 'disqus_thread')
+  .body
+    = body

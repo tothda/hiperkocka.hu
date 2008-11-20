@@ -1,0 +1,9 @@
+---
+extension: html
+filter:    haml
+layout:    default
+dirty:     true
+---
+= render :partial => "/blog/post", :locals => {:article => @page, :body => @content}
+
+= render :partial => "/blog/disqus"

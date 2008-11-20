@@ -5,14 +5,7 @@ filter:
   - haml
 ---
 - article = @pages.find(:first, :in_directory => @page.dir, :recursive => true, :sort_by => "created_at", :reverse => true, :blog_post => true)
-
-.article
-  %h1.no_mar.title_link.bor_bot
-    = link_to_page(article)
-  .meta.mar_hlf_bot
-    = article.created_at.strftime('%Y.%m.%d, %H:%M')  
-  .body
-    = render(article)
+= render(:partial => "/blog/post", :locals => {:article => article, :body => render(article)})
 
 .recent_posts.mar_top
   %h2.mar_hlf_bot.bor_bot

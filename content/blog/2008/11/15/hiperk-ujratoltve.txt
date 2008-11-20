@@ -1,7 +1,8 @@
 --- 
-title:      Hiperkocka újratöltve
+title:      Hiperkocka újra száguld
 created_at: 2008-11-15 13:15:25.648002 +01:00
 blog_post:  true
+layout:     post
 filter:
   - textile
 --- 
@@ -13,9 +14,12 @@ De csak időlegesen, mert az elmúlt egy hétben ismét kézbe vettem a dolgokat
 Az újászületést segítette: [Webby](http://webby.rubyforge.org/)
 --------------------------------------------------------------
 
-A [Budapest.rb](http://ruby.meetup.hu/blog/2008/10/23/budapest-rb-oktoberi-eloadasok.html)-n is volt már szó a webby-ről, de már korábban felkeltette az érdeklődésemet eme frappáns megoldás. De miért is jó ez nekem?
+Az [októberi Budapest.rb](http://ruby.meetup.hu/blog/2008/10/23/budapest-rb-oktoberi-eloadasok.html)-n is volt szó a webby-ről, de már korábban felkeltette az érdeklődésemet eme frappáns megoldás. De miért is jó ez nekem?
 
 * a saját szövegszerkesztőmben írhatom a posztokat, faraghatom az oldalt
 * az egészet verziókezelőben tarthatom (a bejegyszéseket is!!!)
-* mivel a webby kimenetén statikus fájlok jönnek ki (html, css, js, xml), ezeket egy webszerverre felmásolva már megy is az oldal, nem kell se adatbázis, se ruby se semmi a kiszoláló gépre
+* mivel a webby kimenetén statikus fájlok jönnek ki (html, css, js, xml), ezeket egy webszerverre felmásolva már megy is az oldal, nem kell se adatbázis, se ruby, se semmi a kiszoláló gépre
 * használhatok template nyelveket tetszés szerint ([sass](http://haml.hamptoncatlin.com/docs/rdoc/classes/Sass.html)-t a stylesheet-ekhez, [haml](http://haml.hamptoncatlin.com/tutorial/)-t, [textile](http://hobix.com/textile/)-t, [erb](http://www.ruby-doc.org/stdlib/libdoc/erb/rdoc/)-t a html-ekhez)
+* mert ruby, és szeretem :)
+
+A külcsín egyszerű lett, a tartalomra kellene innentől fogva koncentrálni. 

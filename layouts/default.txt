@@ -10,6 +10,7 @@ filter: erb
   <title><%= @page.title || "hiperkocka.hu" %></title>
   <meta name="author" content="<%= @page.author %>" />
   <link rel="stylesheet" href="/css/site.css" type="text/css" media="screen, projection" />
+  <!--<link rel="stylesheet" href="/css/disqus.css" type="text/css" media="screen, projection" /> -->
   <link rel="alternate" type="application/atom+xml" title="hiperkocka feed (atom)" href="/blog/atom.xml" />
 </head>
 <body>
@@ -24,11 +25,6 @@ filter: erb
       <div class='clear'></div>
     </div>
     <div id='content'>
-      <% if @page.title %>
-        <h1 class='no_mar bor_bot'><%= @page.title %></h1>
-        <div class='meta mar_hlf_bot'><%= @page.created_at.strftime('%Y.%m.%d, %H:%M') %></div>
-        <div class='meta mar_hlf_bot'><%= link_to('komment', @page, :anchor => 'disqus_thread') %></div>
-      <% end %>
       <%= @content %>
     </div>
   </div>
