@@ -16,12 +16,12 @@ sass_options:
 !highlight   = #B2CCFF
 !quiet       = #666
 !alt         = #666
-!viewport_background_color = #DCD8D8
+!gray1       = #DCD8D8
 
 @import malo.css
 
 body
-  :background-color = !viewport_background_color
+  :background-color = !gray1
   :line-height 1.4
   :font
     :size 13px
@@ -35,6 +35,12 @@ h2
 
 p
   :margin-bottom 10px
+
+pre
+  :background-color = !gray1
+  :padding 5px
+  :font-size 0.9em
+  :overflow auto
 
 #content
   :background-color white
@@ -123,3 +129,6 @@ dl
 
 #disqus_thread
   :margin-top 40px
+
+.gist .gist-file .gist-data
+  :background-color #F8F8FF

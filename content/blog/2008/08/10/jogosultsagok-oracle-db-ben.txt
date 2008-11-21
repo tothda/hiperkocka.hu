@@ -2,6 +2,7 @@
 title:      Jogosultságok Oracle DB-ben
 created_at: 2008-08-10 12:24:10.047977 +02:00
 blog_post:  true
+layout:     post
 filter:
   - textile
 ---
@@ -45,17 +46,21 @@ Jogosultságok kiosztása
 -----------------------
 
 Objektum szintű jogosultságot adunk Bobo nevű kollégának, hogy módosíthassa a departments tábla department_name oszlopát.
-    SQL> GRANT UPDATE (department_name) ON departments TO bobo ;
+
+<pre>
+SQL> GRANT UPDATE (department_name) ON departments TO bobo;</pre>
 
 A looser_privs szerepnek jogot adunk, hogy bármilyen táblát eldobhasson, majd Bobo megkapja a looser_privs-t.
 
-    SQL> GRANT DROP ANY TABLE TO looser_privs;
-    SQL> GRANT looser_privs TO bobo;
+<pre>
+SQL> GRANT DROP ANY TABLE TO looser_privs;
+SQL> GRANT looser_privs TO bobo;</pre>
 
 Majd rájövünk, hogy inkább visszavonunk mindent
 
-    SQL> REVOKE UPDATE ON departments FROM bobo;
-    SQL> REVOKE DROP ANY TABLE FROM looser_privs;
+<pre>
+SQL> REVOKE UPDATE ON departments FROM bobo;
+SQL> REVOKE DROP ANY TABLE FROM looser_privs;</pre>
 
 Jogosultságok lekérdezése
 -------------------------
