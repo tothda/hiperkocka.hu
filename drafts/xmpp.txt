@@ -1,0 +1,5 @@
+XMPP
+====
+
+XMPP: Extensible Messaging and Presence Protocoll
+

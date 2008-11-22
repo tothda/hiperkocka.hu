@@ -1,0 +1,20 @@
+Emacs referencia
+================
+
+buffers
+-------
+
+C-x h - egész buffer kijelölése
+C-x b - váltás egy másik megnyitott buffer-re
+
+bookmarks
+---------
+
+C-x r m [bookmark neve] - bookmark létrehozása
+C-x r b [bookmark neve] - ugrás adott bookmark-hoz
+C-x r l - bookmark-ok listázása
+
+git-status buffer
+-----------------
+a - hozzáadás az index-hez
+g - frissítés
