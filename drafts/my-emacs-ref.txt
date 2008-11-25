@@ -1,11 +1,29 @@
 Emacs referencia
 ================
 
+mozgás
+------
+C-f - következő karakterre
+C-b - előző karakterre
+C-n - következő sorra
+C-p - előző sorra
+
+C-a - sor elejére
+C-e - sor végére
+M-a - (előző) mondat elejére
+M-e - (következő) mondat végére
+
+killing
+-------
+
+M-d - szó törlése
+
 buffers
 -------
 
 C-x h - egész buffer kijelölése
 C-x b - váltás egy másik megnyitott buffer-re
+C-x b ENTER - előző buffer kiválasztása
 
 bookmarks
 ---------
@@ -18,3 +36,7 @@ git-status buffer
 -----------------
 a - hozzáadás az index-hez
 g - frissítés
+m - file kijelölése
+M - összef file kijelölése
+c - commit (kijelölt fájlokat)
+C-c C-c - mehet a commit (commit message bufferben)
