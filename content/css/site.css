@@ -42,6 +42,9 @@ pre
   :font-size 0.9em
   :overflow auto
 
+a img
+  :border none
+
 #content
   :background-color white
   :padding 20px
@@ -59,17 +62,17 @@ pre
     :text-decoration none
   .title
     :float left
-    :padding 0 0 5px 20px
+    :padding 5px 0 0 20px
     a
       :font
-        :family "Times New Roman"
+        :family "Times New Roman", serif
         :size 24px
         :weight bold      
   .links
     :float right
     :font
       :size 14px      
-    :padding 5px 20px 5px 0
+    :padding 12px 22px 0 0
       
 
 .no_mar_top

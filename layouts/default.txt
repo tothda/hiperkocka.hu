@@ -20,7 +20,7 @@ filter: erb
         <a href='/'>hiperkocka.hu</a>
       </div>
       <div class='links'>
-        <a href='http://feeds.feedburner.com/hiperkocka'>rss</a>
+        <a href='http://feeds.feedburner.com/hiperkocka'><img alt="rss icon" src="/images/rss.jpg"/></a>
       </div>
       <div class='clear'></div>
     </div>
