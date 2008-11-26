@@ -64,10 +64,8 @@ a img
     :float left
     :padding 5px 0 0 20px
     a
-      :font
-        :family "Times New Roman", serif
-        :size 24px
-        :weight bold      
+      img
+        :height 29px
   .links
     :float right
     :font

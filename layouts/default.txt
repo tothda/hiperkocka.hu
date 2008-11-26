@@ -17,7 +17,7 @@ filter: erb
   <div id='wrapper' class='container'>
     <div id='header'>
       <div class='title'>
-        <a href='/'>hiperkocka.hu</a>
+        <a href='/'><img alt="hipekocka icon" src="/images/hiperkocka.jpg" /></a>
       </div>
       <div class='links'>
         <a href='http://feeds.feedburner.com/hiperkocka'><img alt="rss icon" src="/images/rss.jpg"/></a>
