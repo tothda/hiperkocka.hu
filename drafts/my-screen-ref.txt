@@ -1,0 +1,13 @@
+Screen
+======
+
+C-a :vbell off - visual bell kikapcsolasa (atter sound bell-re)
+C-a a - tovabbkuld egy C-a -t a screen az eppen futo programnak, igy lehet C-at kuldeni pl emacs-nek
+
+Multiuser sessions
+------------------
+
+screen -S room - screen session inditasa room neven
+C-a :multiuser on - multiuser mode bekapcsolasa
+C-a :acladd mike  - jogot adjunk mike user-nek, hogy belepjen a session-be
+screen -x room/tothda - hozzakapcsolodas tothda user room nevu screen session-jehez
