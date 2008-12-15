@@ -1,0 +1,35 @@
+Couch DB
+========
+
+A CouchDB egy dokumentum orientált adatbázis, amely számos tulajdonságában különbözik a hagyományos relációs adatbázisoktól.
+
+Dokumentum orientált
+--------------------
+
+Az adatok nem tábla - sor - mező struktúrában tárolódnak, hanem minden dokumentum. A dokumentumok kulcs érték hamlazai. 
+Egy példán keresztül szeretném bemutatni
+
+{
+  _id: "tothda",
+  type: "person",
+  name: "Tóth Dávid",
+  emails: [
+    {
+      type: "work",
+      email: "david.toth@dbx.hu"
+    },
+    {
+      type: "private",
+      email: "tothda@gmail.com"
+    }
+  ]
+}
+
+- elosztott
+- séma mentes
+- RESTful HTTP interfész
+- adatformátum: JSON
+- inkrementális replikáció (konfliktus feloldás)
+- lekérdezőnyelve: JavaScript
+- Map/Reduce
+

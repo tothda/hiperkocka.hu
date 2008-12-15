@@ -11,3 +11,12 @@ screen -S room - screen session inditasa room neven
 C-a :multiuser on - multiuser mode bekapcsolasa
 C-a :acladd mike  - jogot adjunk mike user-nek, hogy belepjen a session-be
 screen -x room/tothda - hozzakapcsolodas tothda user room nevu screen session-jehez
+
+C-a [ (vagy C-a ESC) - copy mode (amikoris lehet scrollozni)
+
+Több ablak kezelése
+-------------------
+
+C-a S - két ablak jelenik meg horizontálisan kettévágva az aktuális ablakot
+C-a TAB - ugrás a következő screen ablakba
+C-a Q - minden screen ablak bezárása, kivéve az aktuálisat
