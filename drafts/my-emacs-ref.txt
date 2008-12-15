@@ -40,3 +40,10 @@ m - file kijelölése
 M - összef file kijelölése
 c - commit (kijelölt fájlokat)
 C-c C-c - mehet a commit (commit message bufferben)
+
+MAN oldalak olvasása
+--------------------
+
+M-x manual-entry ENTER topic ENTER - topic MAN oldalának beolvasása egy új bufferbe
+M-x woman ENTER topic ENTER - mint az előző, csak nem a man programot használja a formázáshoz + TAB-ra kiegészíti a topic-ot
+

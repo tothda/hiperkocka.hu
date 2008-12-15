@@ -1,0 +1,28 @@
+Alternatívák beállítása ruby esetén
+===================================
+
+A probléma: adott 2 ruby verzió egy gépen MRI ruby és Enterprise ruby
+
+sudo update-alternatives --list ruby  -> nem ad eredményt, mert még nincs beállítva a ruby az alternatíva kezelésbe
+
+Felinstalláljuk az alternatívákat
+
+   $ sudo update-alternatives --install ruby ruby /usr/bin/ruby1.8 10
+   $ sudo update-alternatives --install ruby ruby /opt/ruby-enterprise-1.8.6-20081205/bin/ruby 9
+
+Ezután kilistázva a ruby group-ot
+
+   $ sudo update-alternatives --list ruby
+   /usr/bin/ruby1.8
+   /opt/ruby-enterprise-1.8.6-20081205/bin/ruby
+
+Átállítjuk a linket, az alternatíva linkjére
+
+   $ sudo rm /usr/bin/ruby
+   $ sudo ln -s /etc/alternatives/ruby /usr/bin/ruby
+
+Kiválasztjuk, hogy melyik legyen az aktuális
+
+   $ sudo update-alternatives --config ruby
+
+Kész
