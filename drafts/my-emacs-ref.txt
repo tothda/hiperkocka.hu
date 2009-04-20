@@ -47,3 +47,8 @@ MAN oldalak olvasása
 M-x manual-entry ENTER topic ENTER - topic MAN oldalának beolvasása egy új bufferbe
 M-x woman ENTER topic ENTER - mint az előző, csak nem a man programot használja a formázáshoz + TAB-ra kiegészíti a topic-ot
 
+Egyéb
+-----
+
+M-x toggle-truncate-lines - hosszú sorok tördelésének letiltása
+M-x linum-mode - sorszámok mutatása

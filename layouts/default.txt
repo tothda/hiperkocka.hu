@@ -11,7 +11,7 @@ filter: erb
   <meta name="author" content="<%= @page.author %>" />
   <link rel="stylesheet" href="/css/site.css" type="text/css" media="screen, projection" />
   <!--<link rel="stylesheet" href="/css/disqus.css" type="text/css" media="screen, projection" /> -->
-  <link rel="alternate" type="application/atom+xml" title="hiperkocka feed (atom)" href="http://feeds.feedburner.com/hiperkocka" />
+  <link rel="alternate" type="application/atom+xml" title="hiperkocka feed (atom)" href="http://feeds2.feedburner.com/hiperkocka" />
 </head>
 <body>
   <div id='wrapper' class='container'>
@@ -20,7 +20,7 @@ filter: erb
         <a href='/'><img alt="hipekocka icon" src="/images/hiperkocka.jpg" /></a>
       </div>
       <div class='links'>
-        <a href='http://feeds.feedburner.com/hiperkocka'><img alt="rss icon" src="/images/rss.jpg"/></a>
+        <a href='http://feeds2.feedburner.com/hiperkocka'><img alt="rss icon" src="/images/rss.jpg"/></a>
       </div>
       <div class='clear'></div>
     </div>
