@@ -12,6 +12,7 @@ filter: erb
   <link rel="stylesheet" href="/css/site.css" type="text/css" media="screen, projection" />
   <!--<link rel="stylesheet" href="/css/disqus.css" type="text/css" media="screen, projection" /> -->
   <link rel="alternate" type="application/atom+xml" title="hiperkocka feed (atom)" href="http://feeds2.feedburner.com/hiperkocka" />
+  <style><%= @page.custom_style %></style>
 </head>
 <body>
   <div id='wrapper' class='container'>

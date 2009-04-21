@@ -1,0 +1,89 @@
+--- 
+title:      Memori, avagy szótanulás az iWiW-en!
+created_at: 2009-04-22 00:58:25.648002 +01:00
+blog_post:  true
+layout:     post
+filter:
+  - textile
+--- 
+
+<style>
+  #box-table td, #box-table th { 
+    border: 1px solid black;
+    padding: 2px 4px;
+  }
+
+  #screenshot-table td {
+    padding: 20px 50px;
+  }
+
+  #screenshot-table td p {
+    text-align: center;
+  }
+</style>
+
+
+Ha minden igaz ma hajnalban élesbe áll az iWiW-re fejlesztett alkalmazásom, ami a keresztségben a Memori nevet kapta. Idegen nyelvű szavak, kifejezések tanulását támogatja a <a href="http://en.wikipedia.org/wiki/Flashcard">Leitner módszer</a> segítségével. A módszer egy pofonegyszerű algoritmus, aminek eredményeként a tanulásra szánt időnket hatékonyabban tudjuk kihasználni, mintha egy szótárfüzetből bifláznánk a szavakat. Mitől hatékony? Attól, hogy a számunkra könnyebb szavakat kevesebbszer, a nehezebbeket többször kérdezi. Lássuk a részleteket!
+
+A Leitner módszer
+-----------------
+
+Van N db dobozunk, megszámozva egytől N-ig. A tanulandó szavainkat kártyákra írjuk, egyik oldalára magyarul a másikra mondjuk angolul, és a dobozokba rakjuk, kezdetben az első dobozba. Gyakorlás során húzunk véletlenszerűen egy kártyát a k-dik dobozból, megnézzük a magyar kifejezést, majd megpróbáljuk felidézni az angolt. Ha nem sikerül visszatesszük az első dobozba, ha viszont igen, akkor egy időre félretesszük a kártyát pihentetni (minél magasabb számú dobozból vettük elő, annál nagyobb ez az idő), majd visszatesszük a k+1-dik számű dobozba.
+
+<p class="mar_top center">
+  <img src="/images/leitner.png" alt="leitner method" />
+  <p style="text-align: center;" class="mar_bot"><small>kártyák mozgása a tanulás során</small></p>
+</p>
+
+A Memoriban 5 dobozunk van, és az idő, amíg a program egy sikeres gyakorlás után pihenteti a kártyát a következő táblázat szerint alakul:
+
+<div class="center">
+  <table id="box-table" class="mar_top mar_bot">
+    <tr><th>doboz száma</th><th>pihentetési idő</th></tr>
+    <tr><td>2. doboz</td><td>1 nap</td></tr>
+    <tr><td>3. doboz</td><td>3 nap</td></tr>
+    <tr><td>4. doboz</td><td>7 nap</td></tr>
+    <tr><td>5. doboz</td><td>30 nap</td></tr>
+  </table>
+</div>
+
+Az első doboz nincs benne a táblázatban, hisz itt csak új, vagy sikertelenül gyakorolt szavak lehetnek, ezeket mindig kérdezi a program.
+
+Hogy is néz ki?
+---------------
+
+Az alábbi 4 képen a Memori legfontosabb funckiói láthatók. Az 1. ábrán lévő listában minden leckéhez található egy diagram, ez hivatott mutatni a szavak dobozonkénti eloszlását. Az első oszlop felel meg az első doboznak, a második a másodiknak, és így tovább. Piros szín jelzi azokat a kártyákat, amelyeket gyakorolnunk kell, a barna szín az inaktív kártyákat mutatja. (Inaktívak azok, melyeket legutóbb sikeresen ismételtünk, de még nem telt le a dobozukhoz tartozó pihentetési idő.)
+
+Gyakorlás során (4. kép) a felhasználó megnézi a kártya előlapját, megpróbálja felidézni a kifejezést, esetleg megnézi a hátoldalt ha szükséges, majd nyilatkozik, hogy tudta-e. Füllenteni nem érdemes, mert magunkat csapjuk be. :)
+
+Abban az esetben, ha tudjuk, hogy egy iWiW-es ismerősünk már felvitt egy olyan leckét, melyet gyakorolni szeretnénk, a szavak begépelését is megspórolhatjuk. Az ismerőseim menüpontban (3. kép) megkeressük az emberünket, s lehetőségünk van átvenni a leckéjét. 
+
+
+<table id="screenshot-table" class="mar_top mar_bot">
+  <tr>
+    <td class="bor_bot bor_rgt">
+      <a href="http://www.flickr.com/photos/28971311@N08/3463937458/"><img src="http://farm4.static.flickr.com/3614/3463937458_0e7b1ced23_m.jpg" alt="memori screenshot" /></a>
+      <p><small>1.kép - leckék listája</small></p>
+    </td>
+    <td class="bor_bot">
+      <a href="http://www.flickr.com/photos/28971311@N08/3463937782/"><img src="http://farm4.static.flickr.com/3643/3463937782_e7a9f32ddc_m.jpg" alt="memori screenshot" /></a>
+      <p><small>2. kép - lecke szerkesztése</small></p>
+    </td>
+  </tr>
+  <tr>
+    <td class="bor_rgt">
+      <a href="http://www.flickr.com/photos/28971311@N08/3463937928/"><img src="http://farm4.static.flickr.com/3597/3463937928_30627d2b56_m.jpg" alt="memori screenshot" /></a>
+      <p><small>3. kép - ismerősök leckéi</small></p>
+    </td>
+    <td>
+      <a href="http://www.flickr.com/photos/28971311@N08/3463120961/"><img src="http://farm4.static.flickr.com/3647/3463120961_05b3dd16eb_m.jpg" alt="memori screenshot" /></a>
+      <p><small>4. kép - lecke gyakorlása</small></p>
+    </td>
+  </tr>
+</table>
+
+Remélem, hogy sikerült egy hasznos alkalmazást összekalapálnom. Jó sok időmet elvitte a fejlesztés, ezúton is köszönöm <a href="http://pappkrisztina.hu">pkitti</a> véget nem érő türelmét, amivel tolerálta az éjszakai kódoló szeánszokat. :) 
+
+Rengeteg funkció implementálására már nem maradt idő, de ha a használati statisztika is úgy akarja majd, fogom még továbbfejleszteni a Memorit. Holnaptól a hibajavításé az elsődleges prioritás, ha bug-ot észleltek, jelezzétek itt a hozzászólásokban, vagy a memori kukac hiperkocka.hu email címen. 
+
+Mindenkinek kellemes tanulást! :) 
