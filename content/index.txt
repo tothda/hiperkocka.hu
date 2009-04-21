@@ -9,7 +9,7 @@ filter:
 
 .recent_posts.mar_top
   %h2.mar_hlf_bot.bor_bot
-    Korábbi cikkek
+    Korábbi írások
   - articles = @pages.find(:all, :in_directory => @page.dir, :recursive => true, :sort_by => "created_at", :reverse => true, :blog_post => true)
   - articles.shift
   - for article in articles
