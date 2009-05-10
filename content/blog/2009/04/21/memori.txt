@@ -25,8 +25,7 @@ filter:
 
 Ha minden igaz ma hajnalban élesbe áll az iWiW-re fejlesztett alkalmazásom, ami a keresztségben a Memori nevet kapta. Idegen nyelvű szavak, kifejezések tanulását támogatja a <a href="http://en.wikipedia.org/wiki/Flashcard">Leitner módszer</a> segítségével. A módszer egy pofonegyszerű algoritmus, aminek eredményeként a tanulásra szánt időnket hatékonyabban tudjuk kihasználni, mintha egy szótárfüzetből bifláznánk a szavakat. Mitől hatékony? Attól, hogy a számunkra könnyebb szavakat kevesebbszer, a nehezebbeket többször kérdezi. Lássuk a részleteket!
 
-A Leitner módszer
------------------
+h2. A Leitner módszer
 
 Van N db dobozunk, megszámozva egytől N-ig. A tanulandó szavainkat kártyákra írjuk, egyik oldalára magyarul a másikra mondjuk angolul, és a dobozokba rakjuk, kezdetben az első dobozba. Gyakorlás során húzunk véletlenszerűen egy kártyát a k-dik dobozból, megnézzük a magyar kifejezést, majd megpróbáljuk felidézni az angolt. Ha nem sikerül visszatesszük az első dobozba, ha viszont igen, akkor egy időre félretesszük a kártyát pihentetni (minél magasabb számú dobozból vettük elő, annál nagyobb ez az idő), majd visszatesszük a k+1-dik számű dobozba.
 
@@ -49,8 +48,7 @@ A Memoriban 5 dobozunk van, és az idő, amíg a program egy sikeres gyakorlás 
 
 Az első doboz nincs benne a táblázatban, hisz itt csak új, vagy sikertelenül gyakorolt szavak lehetnek, ezeket mindig kérdezi a program.
 
-Hogy is néz ki?
----------------
+h2. Hogy is néz ki?
 
 Az alábbi 4 képen a Memori legfontosabb funckiói láthatók. Az 1. ábrán lévő listában minden leckéhez található egy diagram, ez hivatott mutatni a szavak dobozonkénti eloszlását. Az első oszlop felel meg az első doboznak, a második a másodiknak, és így tovább. Piros szín jelzi azokat a kártyákat, amelyeket gyakorolnunk kell, a barna szín az inaktív kártyákat mutatja. (Inaktívak azok, melyeket legutóbb sikeresen ismételtünk, de még nem telt le a dobozukhoz tartozó pihentetési idő.)
 
