@@ -1,0 +1,83 @@
+Néha nehezen tudok dolgoknak nekiállni. Néha nagyon nehezen
+tudok dolgokat folytatni. Néha iszonytatóan nehezen tudok dolgokat
+befejezni. 
+
+
+ 
+
+A pomodoro módszer egy időmenedzseléssi technika, amire nemrég
+bukkantam rá a railsmaturity.com oldalt böngészgetve. Egy olasz csóka
+találta ki, és az egész alapötlete, hogy a napi teendőinket 25 perces
+etapokra osztjuk. A mérésre egy konyhai órát használhatunk, innen a
+módszer neve, a pomodoro olaszul paradicsomot jelent, és hát jobb
+esetben az óránk paradicsom formájú.
+
+Az alapelv tehát, hogy 25 perc meló, majd után 5 perc pihi. Egy etapot
+pomodoro-nak nevezünk. Tehát 25 perc után kijelenthetjük, hogy
+megcsináltunk egy pomodorot. Négy pomodoro után nagyobb szünetet
+tartunk, 15-30 percet.
+
+Nagyjából ennyi információ elolvasá után gondoltam, hogy ezt érdemes
+lenne kipróbálni. Nem tudom ti hogy vagytok vele, de én még a füvet is
+úgy szeretem nyírni, hogy először kis téglalapokra osztom a területet,
+majd egyesével legyőzöm őket. Divide and conquer! 
+
+Szóval vettem a fáradságot, beleolvastam az ingyenes pdf-be, ami
+már belemegy a részletekebe is, egyúttal el is kezdtem használni a
+módszert.
+
+Alapelvek
+---------
+
+Az alábbi dolgokra lesz szükség:
+
+* Pomodoro - a konyhai óra
+* To Do Today Sheet - az adott napon elvégzendő feladatok listája
+* Activity Inventory Sheet - a menet közben felmerült taszkokat írjuk
+ide
+* Records Sheet - nap végén ide írjuk bele, hogy mit csináltunk, és az
+mennyi időt vett igénybe
+
+És nagyjából így néz ki egy nap:
+
+* Reggel az adott napra elrendeltetett feladatok összeírás a To Do
+  Today Sheet-re.
+* Nekiesünk a melónak, szigorúan pomodorokra osztva, 4 után nagyobb
+  szünet. Minden egyes pomodoro után teszünk egy X-et a hozzá tartozó
+  taszkhoz a ToDo lapra.
+* Nap végén a Records Sheet-en összegezzük az elvégzett munkát, és
+  okos következtetéseket vonunk le belőle. Ha tudunk.
+
+Alapszabályok:
+
+* A pomodoro a legkisebb egység, amit feloszthatatlan, akkor kezdődik,
+  mikor az óra elkezd ketyegni és addig tart, amíg nem csörög. Fél pomodoro
+  nem létezik. Ha valamilyen okból az adott pomodoro-t nem tudjuk
+  befejezni, akkor az érvénytelen, elfelejthetjük a kis X-et, amit
+  kaptunk volna érte.
+
+
+Megszakítások kezelése
+----------------------
+
+Az effektíven elvégzett munkához elengedhetetlen a zavaró tényezők
+kiszűrése. A 25 perces etapok ereje részben abból áll, hogy a beérkező
+megszakításokat elég nagy eséllyel el tudjuk tolni a pomodoro végéig,
+vagy netán a következő nagyszünetig. 
+
+Ezek a zavaró tényezők lehetnek belsők:
+
+* ránktör az éhség
+* azonnal le akarjuk csekkelni az email fiókunkat
+* eszünkbe jut valami, amit meg kéne nézni a neten (pl mi lesz esete a
+  tv-ben)
+* valaki twitteren egy érdekes linket posztolt, amit legszívesebben
+* azonnal megnéznénk
+
+És vannak a külső tényezők:
+
+* beérkező telefonhívások
+* egy kollégánk, családtagunk azonnal meg akar tudni tőlünk valamit
+* IM-en keres meg valaki egy problémával
+
+
