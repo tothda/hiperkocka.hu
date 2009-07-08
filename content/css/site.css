@@ -148,3 +148,6 @@ dl
 
 .gist .gist-file .gist-data
   :background-color #F8F8FF
+
+.highlighted
+  :background-color yellow

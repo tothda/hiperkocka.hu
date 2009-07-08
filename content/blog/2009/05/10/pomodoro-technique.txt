@@ -73,3 +73,21 @@ Az eddigi tapasztalataim tehát pozitívak, de meglátjuk mit hoz a jövő. Ha s
 a módszer rejtelmeibe elképzelhető, hogy írok még róla, addig is
 mindenkinek ajánlom a friss napérlelte olasz paradicsomot!
 
+#### <span class="highlighted">Frissítés (2009.07.08)</span>
+
+Néhány alkalmazás, melyek segíthetenek a módszer alkalmazásában:
+
+* [mytomatoes.com](http://mytomatoes.com/) (webalkalmazás)
+* [focus booster](http://www.focusboosterapp.com/) (Adobe AIR kliens)
+* [Pomodairo](http://code.google.com/p/pomodairo/) (Adobe AIR kliens)
+* [e.ggtimer.com](http://e.ggtimer.com/) (online timer, webalkalmazás)
+* [Pomodoro Desktop](http://pomodoro.ugolandini.com/) (Mac alkalmazás)
+* [tomatoist.com](http://tomatoist.com) (webalkalmazás)
+
+Ha felfedeztek valami jópofa alkalmazást, ami nem szerepel a listán, írjátok meg
+kommentben, és frissítem a posztot. Egyébként, ha valaki nyomon akarja
+követni új eszközök megjelenését, akkor a
+[pomodorotechnique](http://groups.google.com/group/pomodorotechnique)
+és a
+[pomodorotechnique-timer](http://groups.google.com/group/pomodorotechnique-timer)
+google group-okat érdemes figyelni.
