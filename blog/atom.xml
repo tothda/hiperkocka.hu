@@ -1,0 +1,25 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>Hiperkocka.hu</title>
+  <link href="http://hiperkocka.hu/blog/atom.xml" rel="self" />
+  <link href="http://hiperkocka.hu/" />
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <author>
+    <name>Tóth Dávid</name>
+    <email>tothda@gmail.com</email>
+  </author>
+  <id>http://hiperkocka.hu/</id>
+
+  {% for post in site.posts %}
+    <entry>
+      <title>{{ post.title | xml_escape }}</title>
+      <link href="http://hiperkocka.hu{{ post.url }}"/>
+      <updated>{{ post.date | date_to_xmlschema }}</updated>
+      <id>http://hiperkocka.hu{{ post.id }}</id>
+      <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+  {% endfor %}
+</feed>

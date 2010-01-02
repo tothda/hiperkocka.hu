@@ -1,0 +1,146 @@
+!text        = #000
+!border      = #CCC
+!header      = #111
+!link        = #125AA7
+!link_hover  = #000
+!blockquote  = #666
+!code        = #000
+!box_bg      = #EEE
+!highlight   = #B2CCFF
+!quiet       = #666
+!alt         = #666
+!gray1       = #DCD8D8
+
+@import malo.css
+
+body
+  :background-color = !gray1
+  :line-height 1.4
+  :font
+    :size 13px
+    :family Verdana
+
+h1
+  :font-size 1.8em
+
+h2
+  :font-size 1.4em
+
+p
+  :margin-bottom 10px
+
+pre
+  :background-color = !gray1
+  :padding 5px
+  :font-size 0.9em
+  :overflow auto
+
+table
+  :border-collapse collapse
+
+a img
+  :border none
+  :display block
+
+#content
+  :background-color white
+  :padding 20px
+  :border-top 3px solid lightgray
+  :border-right 3px solid lightgray
+  :margin-bottom 30px
+
+#wrapper
+  :width 760px
+  :margin 0 auto
+
+#header
+  a
+    :color gray
+    :text-decoration none
+  .title
+    :float left
+    :padding 5px 0 0 20px
+    a
+      img
+        :height 29px
+  .links
+    :float right
+    :font
+      :size 14px      
+    :padding 12px 22px 0 0
+      
+.center
+  :text-align center
+
+.no_mar_top
+  :margin-top 0
+
+.no_mar_bot
+  :margin-bottom 0
+
+.mar_bot
+  :margin-bottom 20px
+
+.mar_hlf_bot
+  :margin-bottom 10px
+
+.mar_top
+  :margin-top 20px
+
+.mar_hlf_top
+  :margin-top 10px
+
+.bor_bot
+  :border-bottom 1px solid gray
+
+.bor_top
+  :border-top 1px solid gray
+
+.bor_rgt
+  :border-right 1px solid gray
+
+.bor_lft
+  :border-left 1px solid gray
+
+.no_mar
+  :margin 0
+
+h1, h2, h3
+  a
+    :text-decoration none
+
+#content
+  a
+    &:hover
+      :background-color yellow
+    img
+      :border 0
+    &:visited
+      :color blue
+
+.meta
+  :color gray
+
+.gist
+  :margin 20px 0 10px 0
+  .gist-data
+    :font-size 0.9em
+  .gist-file
+    pre
+      :padding 8px 9px
+
+dl
+  dt
+    :font-weight bold
+    :margin-top 10px
+
+// disqus
+
+#disqus_thread
+  :margin-top 40px
+
+.gist .gist-file .gist-data
+  :background-color #F8F8FF
+
+.highlighted
+  :background-color yellow

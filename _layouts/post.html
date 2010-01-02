@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="article">
+  <h1 class="no_mar title_link bor_bot">{{ page.title }}</h1>
+  <div class="meta mar_hlf_bot">
+    {{ page.date | date: "%Y.%m.%d, " }}
+    <a href="{{ page.url }}#disqus_thread">hozzászólások</a>
+  </div>
+  <div class="body">
+    {{ content }}
+  </div>
+</div>
